@@ -77,7 +77,8 @@ def downloadData(string):
     
     ### The input must be Quandl or Yahoo
     if string == 'Quandl':
-        auth = "pBfmuka-ph8gCondF8jH"
+        with open("D:\\Trading\\myQuandlAuthToken.txt", 'r') as authToken:
+            auth = authToken.readline()
         
         ### i is the row count of the DataFrame master
         ### ticker is the name of the ticker
