@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import ForeignKey
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String, Date, Float
+from sqlalchemy import Column, Integer, String, Float
 
 ### Connect to the database
 ### The format is: dialect+driver://username:password@host:port/database
