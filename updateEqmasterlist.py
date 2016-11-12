@@ -5,6 +5,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.automap import automap_base
+import pandas as pd
 
 ### Create the engine
 engine = create_engine('mysql+pymysql://root:root123@localhost:3306/securities_master_db', echo = True)
