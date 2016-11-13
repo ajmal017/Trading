@@ -7,6 +7,7 @@ Created on Thu Nov 10 16:40:05 2016
 
 import pandas as pd
 import datetime
+from dateutil.parser import parse
 
 ### Used if data is to be downloaded from Yahoo Finance
 from pandas_datareader.data import DataReader
@@ -45,8 +46,7 @@ def checkDate(filename):
     else:
         return 'Null'
 
-    return datetime.date.strftime(datetime.datetime.strptime(check['Date']\
-    [check.shape[0] - 1], '%Y-%m-%d')+datetime.timedelta(1), '%Y-%m-%d')
+    return parse(check['Date'][check.shape[0] - 1]) + datetime.timedelta(1)
 
 
 def downloadData(string):
