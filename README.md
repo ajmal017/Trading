@@ -43,3 +43,5 @@ The code does the following:
 4. Update eqmasterlist table with updateEqmasterlist.py. All you need to do is update your master sheet excel and run this program.
 
 5. Next, to update the latest data into your MySQL database simply run the code in updateEquities.py.
+
+6. getData.py contains getStockData(name, start, end='Today') gets data on a single stock or an array of stocks from the WIKI database in Quandl. It's in a way a watered down version of downloadWatchList.py.
