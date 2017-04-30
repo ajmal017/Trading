@@ -1,6 +1,6 @@
 # Trading
 
-This codebase is targeted at anyone who wants to use Python and Data Analysis to trade equities. As time progresses the codebase will keep growing to add more and more functionalities. The code is being released under the MIT License which basically means that you can use it for any project - commercial and otherwise - as long as you maintain the license.
+This codebase is targeted at anyone who wants to use Python and Data Analysis to trade equities.
 
 Note: You need to setup your MySQL database. There are some hints on setting up the database in the creatingDB.sql file.
 
